@@ -1,12 +1,10 @@
 Documentation:
 
 This is designed as a project in using functional programming to design a game.
-The objective is to first use function programming via Haskell to develop all the
-mechanics of the game. Once these core ideas are done, the game should be fully
-complete/playable as a text based game (so no graphics).
+The objective is to first use function programming via OCaml to develop all the
+core mechanics of the game. The hope is to then add graphics to improve the 
+user experience
 
-If the project should continue, then the code should be moved to a more heavy graphics
-oriented language with more capabilties. Languages like C++ in mind.
 
 
 Objective:
@@ -40,6 +38,5 @@ Generated map to start with getting first mechanic
 
 TODO:
 
-- Get faimilar with Ocaml (should be better than Haskell since more similar to SML and has better
-module system)
+- Make map
 
