@@ -1,0 +1,5 @@
+(executable
+ (public_name Sim)
+ (name main)
+ (libraries sim)
+ (modules main dict))

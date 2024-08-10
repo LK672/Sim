@@ -1,0 +1,45 @@
+Documentation:
+
+This is designed as a project in using functional programming to design a game.
+The objective is to first use function programming via Haskell to develop all the
+mechanics of the game. Once these core ideas are done, the game should be fully
+complete/playable as a text based game (so no graphics).
+
+If the project should continue, then the code should be moved to a more heavy graphics
+oriented language with more capabilties. Languages like C++ in mind.
+
+
+Objective:
+
+Working as a spy for some mysterious employer, your task is to complete the tasks 
+given to you by this strange employer. However, these tasks are difficult and dangerous,
+including assassinations, thefts and political shenanigans. The challenge lies in maintaining
+a proper cover life in the city while discreetly going about completing these tasks.
+At the end of the completion of each task, the spy is brought to a new city with a new task.
+
+
+Mechanics:
+
+- Immersive city simluation. This will entail generating a dynamic environment to represent the city,
+  generating characters with varying levels of complexity, and other aspects to make the city feel as
+  real as possible
+
+- Task generation: The goal is so that these tasks are generated with wide variety but at the same time
+  with enough specificity such that they are interesting to the player and unique
+  on each round of gameplay. 
+
+- In-depth interaction: To enhance the player experience, everything the player does
+  of any consequence should bring about real changes in the environment. Even at the
+  smallest scale.
+
+
+Plan:
+
+Generated map to start with getting first mechanic
+
+
+TODO:
+
+- Get faimilar with Ocaml (should be better than Haskell since more similar to SML and has better
+module system)
+
