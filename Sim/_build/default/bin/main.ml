@@ -5,10 +5,13 @@ module IntOrder : Dict.ORDERED with type t = int = struct
   let compare (x, y) = if x < y then LESS else (if x > y then GREATER else EQUAL)
 end
 
-module TreeDict = Dict.RBTDict (IntOrder)
-module I = Dict.IRBTDict (TreeDict)
+module T = Dict.RBTDict (IntOrder)
+module I = Dict.IRBTDict (T)
 
-let d = I.empty ()
-let () = I.insert (5, "hi") d
+let test : string I.dict = I.empty ()
+let () = I.insert (5, "hi") test
+let x : string option = I.find 5 test
 
-let () = print_endline "Success"
+let y = match x with None -> "" | Some a -> a
+
+let () = Printf.printf "%s\n" y

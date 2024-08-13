@@ -1,1 +1,1 @@
-bin/main.ml: Dict
+bin/main.ml: Dict Printf

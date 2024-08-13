@@ -1,4 +1,4 @@
-# dune build
+# dune exec Sim
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /Users/ender314/.cache/dune/db
@@ -13,7 +13,4 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/ender314/.opam/default/bin/ocamlc.opt -config > /var/folders/lx/r7v72z_50kg093y3wthhq4300000gn/T/dune_417d95_output
-$ (cd _build/default && /Users/ender314/.opam/default/bin/ocamldep.opt -modules -impl bin/main.ml) > _build/default/bin/.main.eobjs/dune__exe__Main.impl.d
-$ (cd _build/default && /Users/ender314/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.sim.objs/byte -I lib/.sim.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
-$ (cd _build/default && /Users/ender314/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/sim.cmxa bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__Dict.cmx bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ /Users/ender314/.opam/default/bin/ocamlc.opt -config > /var/folders/lx/r7v72z_50kg093y3wthhq4300000gn/T/dune_17ab77_output

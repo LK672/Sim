@@ -101,8 +101,8 @@ end
 
 (* signature for imperative dictionaries *)
 module type IDICT = sig
-  module Key : ORDERED
-  type 'a entry (* abstract *)
+  module Key : ORDERED (* parameter *)
+  type 'a entry = Key.t * 'a (* concrete *)
   type 'a dict  (* abstract *)
 
   val empty : unit -> 'a dict (* We need to create a ref cell so we will make it a function *)
@@ -111,9 +111,9 @@ module type IDICT = sig
 end 
 
 (* functor that takes in a dictionary structure and produces an imperative dictionary *)
-module IRBTDict (T : DICT) : (IDICT) with type 'a entry = 'a T.entry = struct
+module IRBTDict (T : DICT) : IDICT with type Key.t = T.Key.t = struct
   module Key = T.Key
-  type 'a entry = 'a T.entry
+  type 'a entry = Key.t * 'a
   type 'a dict = 'a T.dict ref
 
   let empty = function () -> ref T.empty
